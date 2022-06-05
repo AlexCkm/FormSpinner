@@ -18,7 +18,8 @@ import android.widget.Toast
  * @param spinner es la vista del layout con la que vamos a crear el objeto
  * @param select es un Array<String> de un solo elemento donde devolveremos
  * la opción seleccionada
- * @param idValores es el id (Int) del recurso donde se almacenan los valores del objeto
+ * @param idValores es el id (Int) del recurso donde se almacenan los valores del objeto.
+ * Por ejemplo: R.array.valores
  * */
 fun getSpinner(context:Context, spinner: Spinner, select:Array<String>, idValores:Int){
     val adaptador: ArrayAdapter<*> = ArrayAdapter.createFromResource(context, idValores,
