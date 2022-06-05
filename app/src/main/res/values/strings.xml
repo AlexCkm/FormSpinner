@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FormSpinner</string>
+    <string name="btnAdd">Añadir</string>
+    <string name="btnSend">Enviar</string>
+    <string name="btnBack">Volver</string>
+    <string name="tvForm">Completa los datos</string>
+    <string name="tvDatos">DATOS</string>
+    <string name="etInfo">Introduzca dato</string>
+    <string name="spnOption">Elije una opción</string>
+    <string name="noSelect">Sin selección</string>
+    <string name="noEmpty">El campo de datos no debe estar vacío</string>
+</resources>

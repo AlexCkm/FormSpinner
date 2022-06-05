@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="etiquetas">
+        <item>Nombre</item>
+        <item>Edad</item>
+        <item>Email</item>
+        <item>Teléfono</item>
+        <item>Dirección</item>
+        <item>DNI</item>
+        <item>Facebook</item>
+        <item>Instagram</item>
+        <item>GitHub</item>
+    </string-array>
+</resources>
