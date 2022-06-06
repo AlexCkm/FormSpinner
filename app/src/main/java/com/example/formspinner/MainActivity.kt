@@ -9,24 +9,25 @@ import com.example.formspinner.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var b:ActivityMainBinding
+    private lateinit var binding:ActivityMainBinding
     private val spnOpt = arrayOf("")
     private var datos = mutableMapOf<String, String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        b = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(b.root)
-        getSpinner(this, b.spinner, spnOpt, R.array.etiquetas)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        getSpinner(this, binding.spinner, spnOpt, R.array.etiquetas)
     }
 
     fun clikAdd(view: View){
         if (view is Button){
-            if (spnOpt[0] != "" && b.etInfo.text.toString().isNotEmpty()){
-                datos.put(spnOpt[0], b.etInfo.text.toString())
+            if (spnOpt[0] != "" && binding.etInfo.text.toString().isNotEmpty()){ //si && las dos condiciones son verdaderas el resultado es verdadero
+                datos.put(spnOpt[0], binding.etInfo.text.toString())
             } else {
                 msj(this, getString(R.string.noEmpty))
             }
-            b.etInfo.text.clear()
+            binding.etInfo.text.clear()
         }
     }
 
